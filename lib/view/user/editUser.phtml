@@ -1,0 +1,37 @@
+<form name="userForm" id="userForm">
+	<div class="w600">
+		<select name="userId" id="userId" class="w600" size="5">
+			<option value="" selected>New User</option>
+			<?php 
+				foreach($user as $key => $thisUser){
+					echo "<option value=\"" . $thisUser['pk_user_Id'] . "\"> " . $thisUser['first'] ." " . $thisUser['last'] . "</option>\n";
+				}
+			?>
+		</select>
+	</div>
+	<div class="w300">
+		Username: <input type="text" name="username" id="username">
+	</div>
+	<div class="w300">
+		Email: <input type="text" name="email" id="email">
+	</div>
+	<div class="clear"></div>
+	<div class="w300">
+		Password: <input name="password1" type="password" id="password1">
+	</div>
+	<div class="w300">
+		Password(re-ener)<input name="password2" type="password" id="password2">
+	</div>
+	<div class="clear"></div>			
+	<div class="w300">
+		First: <input type="text" name="first" id="first">
+	</div>
+	<div class="w300">
+		Last: <input type="text" name="last" id="last">
+	</div>
+	<div class="clear"></div>
+	<div class="w600">
+		<input type="button" name="submit" value="Create User">
+		<input type="button" name="delete" value="Delete User">
+	</div>
+</form>

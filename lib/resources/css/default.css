@@ -1,0 +1,14 @@
+div.w600{
+	width: 600px;
+}
+div.w300{
+	width: 300px;
+	float: left;
+}
+
+div.clear{
+	clear: both;
+}
+select.w600{
+	width: 600px;
+}
