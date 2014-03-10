@@ -9,6 +9,10 @@
  */
 class apiUser
 {
+	/**
+	 * Delete User
+	 * Controller for Delete User
+	 */
 	static public function deleteUser(){
 		include_once PATH_MODEL . DIRECTORY_SEPARATOR . "user" . DIRECTORY_SEPARATOR . "mdlDeleteUser.php";
 		
@@ -28,6 +32,10 @@ class apiUser
 		echo $response;
 	}
 	
+	/**
+	 * Get User
+	 * Controller for Get User
+	 */
 	static public function getUser()
 	{
 		include_once PATH_MODEL . DIRECTORY_SEPARATOR . "user" . DIRECTORY_SEPARATOR . "mdlGetUser.php";
@@ -47,6 +55,10 @@ class apiUser
 		echo $response;
 	}
 	
+	/**
+	 * Upsert User
+	 * Controller for Upsert User
+	 */
 	static public function upsertUser(){
 		include_once PATH_MODEL . DIRECTORY_SEPARATOR . "user" . DIRECTORY_SEPARATOR . "mdlUpsertUser.php";
 		
@@ -66,6 +78,10 @@ class apiUser
 		echo $response;
 	}
 	
+	/**
+	 * Edit Usert HTML
+	 * Controller for Edit User. Master Route for this mini project
+	 */
 	public static function editUserHTML(){
 		include_once PATH_MODEL . DIRECTORY_SEPARATOR . "user" . DIRECTORY_SEPARATOR . "mdlGetUser.php";
 		$response = mdlGetUser::getUser(array());
